@@ -71,4 +71,16 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
 
+    //style
+    implementation project(path: ':style:theme')
+
+    //runCodeEveryXLaunch
+    implementation project(path: ':common:runCodeEveryXLaunch')
+
+    //extensions
+    implementation project(path: ':common:composeextensions')
+
+    //oneTimePref
+    implementation project(path: ':common:onetimepreferences')
+
 }

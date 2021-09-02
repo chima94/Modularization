@@ -16,3 +16,9 @@ include ':style:color'
 include ':style:shape'
 include ':style:theme'
 include ':style:typography'
+
+
+include ':common:composeextensions'
+include ':common:commonextensions'
+include ':common:onetimepreferences'
+include ':common:runCodeEveryXLaunch'

@@ -1,7 +1,3 @@
 applyComposeUIDeps(this)
 applyCoilDeps(this)
 
-dependencies {
-
-
-}

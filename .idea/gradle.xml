@@ -13,6 +13,11 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/books" />
             <option value="$PROJECT_DIR$/books/bookui" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/common/commonextensions" />
+            <option value="$PROJECT_DIR$/common/composeextensions" />
+            <option value="$PROJECT_DIR$/common/onetimepreferences" />
+            <option value="$PROJECT_DIR$/common/runCodeEveryXLaunch" />
             <option value="$PROJECT_DIR$/style" />
             <option value="$PROJECT_DIR$/style/color" />
             <option value="$PROJECT_DIR$/style/shape" />
