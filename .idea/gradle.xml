@@ -13,6 +13,11 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/books" />
             <option value="$PROJECT_DIR$/books/bookui" />
+            <option value="$PROJECT_DIR$/style" />
+            <option value="$PROJECT_DIR$/style/color" />
+            <option value="$PROJECT_DIR$/style/shape" />
+            <option value="$PROJECT_DIR$/style/theme" />
+            <option value="$PROJECT_DIR$/style/typography" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
