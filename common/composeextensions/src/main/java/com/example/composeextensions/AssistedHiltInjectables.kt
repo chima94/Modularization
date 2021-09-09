@@ -1,0 +1,9 @@
+package com.example.composeextensions
+
+import com.example.onetimepreferences.OneTimePreferenceViewModel
+import com.example.runcodeeveryxlaunch.RunCodePreferencesViewModel
+
+interface AssistedHiltInjectables {
+    val runCodePreferencesViewModelFactory: RunCodePreferencesViewModel.RunCodePreferencesViewModelFactory
+    val oneTimePreferencesViewModel: OneTimePreferenceViewModel.OneTimePreferenceViewModelFactory
+}

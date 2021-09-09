@@ -22,3 +22,26 @@ include ':common:composeextensions'
 include ':common:commonextensions'
 include ':common:onetimepreferences'
 include ':common:runCodeEveryXLaunch'
+
+include ':bottomnavigation'
+
+include ':resources:strings'
+include ':resources:colors'
+
+include ':search:searchui'
+
+include ':favoritebook:favoritebookui'
+
+include ':latestbook:latestbooksui'
+
+include ':setting:settingsui'
+include ':setting:settingsdata'
+
+include ':navigator'
+
+
+include ':downloads:downloadsdestination'
+include ':downloads:downloadsui'
+include ':search:searchdata'
+
+include ':components:radiobuttoncomponents'

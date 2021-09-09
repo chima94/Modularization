@@ -77,10 +77,34 @@ dependencies {
     //runCodeEveryXLaunch
     implementation project(path: ':common:runCodeEveryXLaunch')
 
+    //color
+    implementation project(path: ':resources:colors')
+    implementation project(path: ':resources:strings')
+
     //extensions
     implementation project(path: ':common:composeextensions')
 
     //oneTimePref
     implementation project(path: ':common:onetimepreferences')
+
+    //navigation
+    implementation project(path: ':bottomnavigation')
+
+    //navigation
+    implementation project(path: ':navigator')
+
+    //search
+    implementation project(path: ':search:searchui')
+
+    //setting
+    implementation project(path: ':setting:settingsui')
+    implementation project(path: ':setting:settingsdata')
+
+    //favoritebook
+    implementation project(path: ':favoritebook:favoritebookui')
+
+    //latestbook
+    implementation project(path: ':latestbook:latestbooksui')
+
 
 }

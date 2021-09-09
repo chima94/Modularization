@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Books</string>
+
+    <string name="search">Search</string>
+    <string name="download">Download</string>
+    <string name="favorites">Favorites</string>
+    <string name="latest">Latest</string>
+    <string name="setting">Setting</string>
+    <string name="search_in_field">Search in fields</string>
+    <string name="filter">filter</string>
+    <string name="search_text">Search by a book name, author or ISBN</string>
+    <string name="default_column">All columns</string>
+    <string name="title">Title</string>
+    <string name="author">Author(s)</string>
+    <string name="series">Series</string>
+    <string name="publisher">Publisher</string>
+    <string name="isbn">ISBN</string>
+    <string name="language">Language</string>
+    <string name="tags">Tags</string>
+    <string name="extension">Extension</string>
+    <string name="md5">MD5</string>
+    <string name="year">Year</string>
+    <string name="pages">pages</string>
+    <string name="default_sort">Default</string>
+    <string name="size_asc">Size ASC</string>
+    <string name="size_desc">Size DESC</string>
+    <string name="title_latest">Latest</string>
+    <string name="author_asc">Author ASC</string>
+    <string name="author_desc">Author DESC</string>
+    <string name="title_asc">Title ASC</string>
+    <string name="title_desc">Title DESC</string>
+    <string name="extension_asc">File type ASC</string>
+    <string name="extension_desc">File type DESC</string>
+    <string name="publisher_asc">Publisher ASC</string>
+    <string name="publisher_desc">Publisher DESC</string>
+    <string name="version">Version</string>
+    <string name="year_asc">Year ASC</string>
+    <string name="year_desc">Year DESC</string>
+    <string name="mask_word">Mask word</string>
+    <string name="search_with_mask_word">Search with mask (word*)</string>
+
+</resources>

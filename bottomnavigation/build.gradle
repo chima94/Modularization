@@ -1,0 +1,10 @@
+applyComposeUIDeps(this)
+applyNavDeps(this)
+
+dependencies {
+    implementation project(path: ':style:shape')
+    implementation project(path: ':resources:strings')
+    implementation project(path: ':downloads:downloadsdestination')
+    //accompanist
+    implementation "com.google.accompanist:accompanist-insets:$accompanist"
+}
