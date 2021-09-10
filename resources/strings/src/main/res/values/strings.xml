@@ -40,5 +40,8 @@
     <string name="year_desc">Year DESC</string>
     <string name="mask_word">Mask word</string>
     <string name="search_with_mask_word">Search with mask (word*)</string>
+    <string name="empty_or_short_input">Search must contain minimum 3 characters…</string>
+    <string name="no_connection_message_will_load_on_connection_achieved">No internet connection available, establish active internet connection and the content will automatically reload !</string>
+
 
 </resources>

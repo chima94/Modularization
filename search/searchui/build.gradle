@@ -8,6 +8,10 @@ dependencies {
 
     implementation project(path: ':components:radiobuttoncomponents')
     implementation project(path: ':search:searchdata')
+    implementation project(path: ':searchresult:searchresultdestination')
+
+    //toaster
+    implementation project(path: ':toaster')
 
     implementation "com.github.FunkyMuse:Composed:$composed"
     implementation "androidx.hilt:hilt-navigation-compose:$navigation_compose"

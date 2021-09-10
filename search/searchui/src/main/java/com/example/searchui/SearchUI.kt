@@ -32,7 +32,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.navigator.NavigatorViewModel
 import com.example.radiobuttoncomponents.RadioButtonWithText
 import com.example.searchdata.SearchViewModel
+import com.example.searchresultdestination.SearchResultDestination
 import com.example.shape.BottomSheetShapes
+import com.example.toaster.ToasterViewModel
 import com.google.accompanist.insets.navigationBarsPadding
 import kotlinx.coroutines.launch
 import java.util.Locale.filter
@@ -116,7 +118,13 @@ fun SearchUI(){
                 .fillMaxWidth()
                 .align(Alignment.Center)) {
 
-                SearchInput(){}
+                SearchInput(){inputText ->
+                    navigatorViewModel.navigate(SearchResultDestination.createSearchRoute(
+                        inputText.trim(),
+                        searchInFieldsCheckedPosition,
+                        searchWithMaskWord
+                    ))
+                }
                 SearchInputExplained()
             }
             Box(
@@ -159,6 +167,7 @@ fun SearchInputExplained(){
 fun SearchInput(
     onInputText: (inputText: String) -> Unit = {}
 ){
+    val viewModel = hiltViewModel<ToasterViewModel>()
     val keyboardController = LocalSoftwareKeyboardController.current
     var inputText by rememberSaveable{ mutableStateOf("")}
     val invalidInput = inputText.isBlank() || inputText.length < 3
@@ -177,6 +186,7 @@ fun SearchInput(
         ),
         keyboardActions = KeyboardActions(onSearch = {
             if(invalidInput){
+                viewModel.shortToast(com.example.strings.R.string.empty_or_short_input)
                 return@KeyboardActions
             }
             keyboardController?.hide()

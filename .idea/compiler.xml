@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="Books.app" target="11" />
+      <module name="Books.books.bookmodel" target="1.8" />
+      <module name="Books.books.bookui" target="11" />
+      <module name="Books.bottomnavigation" target="11" />
+      <module name="Books.common.commonextensions" target="11" />
+      <module name="Books.common.composeextensions" target="11" />
+      <module name="Books.common.onetimepreferences" target="11" />
+      <module name="Books.common.runCodeEveryXLaunch" target="11" />
+      <module name="Books.components.radiobuttoncomponents" target="11" />
+      <module name="Books.coroutines.appscope" target="11" />
+      <module name="Books.coroutines.dispatchers" target="11" />
+      <module name="Books.downloads.downloadsdestination" target="11" />
+      <module name="Books.downloads.downloadsui" target="11" />
+      <module name="Books.favoritebook.favoritebookui" target="11" />
+      <module name="Books.latestbook.latestbooksui" target="11" />
+      <module name="Books.navigator" target="11" />
+      <module name="Books.paging" target="11" />
+      <module name="Books.resources.colors" target="11" />
+      <module name="Books.resources.strings" target="11" />
+      <module name="Books.scraper.skraper" target="11" />
+      <module name="Books.search.searchdata" target="11" />
+      <module name="Books.search.searchui" target="11" />
+      <module name="Books.searchresult.searchresultdata" target="11" />
+      <module name="Books.searchresult.searchresultdestination" target="11" />
+      <module name="Books.searchresult.searchresultui" target="11" />
+      <module name="Books.setting.settingsdata" target="11" />
+      <module name="Books.setting.settingsui" target="11" />
+      <module name="Books.style.color" target="11" />
+      <module name="Books.style.shape" target="11" />
+      <module name="Books.style.theme" target="11" />
+      <module name="Books.style.typography" target="11" />
+      <module name="Books.toaster" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

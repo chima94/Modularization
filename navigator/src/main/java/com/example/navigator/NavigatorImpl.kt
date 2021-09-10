@@ -5,8 +5,10 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.receiveAsFlow
 import javax.inject.Inject
+import javax.inject.Singleton
 
-class NavigatorImpl @Inject constructor(): Navigator {
+@Singleton
+internal class NavigatorImpl @Inject constructor(): Navigator {
 
     private val navigationEvents = Channel<NavigatorEvent>()
     override val destinations = navigationEvents.receiveAsFlow()

@@ -1,0 +1,9 @@
+plugins {
+    id 'kotlin-kapt'
+}
+
+applyMoshiDeps(this)
+
+dependencies {
+    api project(path: ':books:generalbook')
+}

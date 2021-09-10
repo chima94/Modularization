@@ -21,6 +21,7 @@ import androidx.navigation.compose.rememberNavController
 import coil.compose.LocalImageLoader
 import coil.imageLoader
 import com.example.books.navigation.addBottomNavigationDestinations
+import com.example.books.navigation.addComposableDestination
 import com.example.bottonnavigation.BookBottomNavigation
 import com.example.bottonnavigation.SearchRoute
 
@@ -29,6 +30,7 @@ import com.example.navigator.Navigator
 import com.example.navigator.NavigatorEvent
 import com.example.onetimepreferences.OneTimePreferenceViewModel
 import com.example.runcodeeveryxlaunch.RunCodePreferencesViewModel
+import com.example.searchresultdestination.SearchResultDestination
 import com.example.settingdata.SettingsViewModel
 
 import com.example.theme.BooksTheme
@@ -75,6 +77,9 @@ class MainActivity : ComponentActivity(), AssistedHiltInjectables {
 }
 
 
+private val hideBottomNavFromDestinationRoutes = listOf(
+    SearchResultDestination.route(),
+)
 
 @Composable
 fun BookScaffold(navigator: Navigator){
@@ -94,13 +99,14 @@ fun BookScaffold(navigator: Navigator){
 
     Scaffold(
         bottomBar = {
-            BookBottomNavigation(navController = navController, emptyList())
+            BookBottomNavigation(navController = navController, hideBottomNavFromDestinationRoutes)
         }
     ){
         NavHost(
             navController = navController ,
             startDestination = SearchRoute.route,
             builder ={
+                addComposableDestination()
                 addBottomNavigationDestinations()
             }
         )

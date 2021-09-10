@@ -95,10 +95,14 @@ dependencies {
 
     //search
     implementation project(path: ':search:searchui')
+    implementation project(path: ':searchresult:searchresultui')
+    implementation project(path: ':searchresult:searchresultdestination')
 
     //setting
     implementation project(path: ':setting:settingsui')
     implementation project(path: ':setting:settingsdata')
+
+
 
     //favoritebook
     implementation project(path: ':favoritebook:favoritebookui')

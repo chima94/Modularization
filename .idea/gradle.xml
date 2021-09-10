@@ -12,7 +12,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/books" />
+            <option value="$PROJECT_DIR$/books/bookmodel" />
             <option value="$PROJECT_DIR$/books/bookui" />
+            <option value="$PROJECT_DIR$/books/generalbook" />
             <option value="$PROJECT_DIR$/bottomnavigation" />
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/common/commonextensions" />
@@ -21,6 +23,9 @@
             <option value="$PROJECT_DIR$/common/runCodeEveryXLaunch" />
             <option value="$PROJECT_DIR$/components" />
             <option value="$PROJECT_DIR$/components/radiobuttoncomponents" />
+            <option value="$PROJECT_DIR$/coroutines" />
+            <option value="$PROJECT_DIR$/coroutines/appscope" />
+            <option value="$PROJECT_DIR$/coroutines/dispatchers" />
             <option value="$PROJECT_DIR$/downloads" />
             <option value="$PROJECT_DIR$/downloads/downloadsdestination" />
             <option value="$PROJECT_DIR$/downloads/downloadsui" />
@@ -29,12 +34,21 @@
             <option value="$PROJECT_DIR$/latestbook" />
             <option value="$PROJECT_DIR$/latestbook/latestbooksui" />
             <option value="$PROJECT_DIR$/navigator" />
+            <option value="$PROJECT_DIR$/paging" />
             <option value="$PROJECT_DIR$/resources" />
             <option value="$PROJECT_DIR$/resources/colors" />
             <option value="$PROJECT_DIR$/resources/strings" />
+            <option value="$PROJECT_DIR$/scraper" />
+            <option value="$PROJECT_DIR$/scraper/scrapermodel" />
+            <option value="$PROJECT_DIR$/scraper/skraper" />
             <option value="$PROJECT_DIR$/search" />
             <option value="$PROJECT_DIR$/search/searchdata" />
             <option value="$PROJECT_DIR$/search/searchui" />
+            <option value="$PROJECT_DIR$/searchresult" />
+            <option value="$PROJECT_DIR$/searchresult/searchresultdata" />
+            <option value="$PROJECT_DIR$/searchresult/searchresultdestination" />
+            <option value="$PROJECT_DIR$/searchresult/searchresultui" />
+            <option value="$PROJECT_DIR$/serverconstants" />
             <option value="$PROJECT_DIR$/setting" />
             <option value="$PROJECT_DIR$/setting/settingsdata" />
             <option value="$PROJECT_DIR$/setting/settingsui" />
@@ -43,6 +57,7 @@
             <option value="$PROJECT_DIR$/style/shape" />
             <option value="$PROJECT_DIR$/style/theme" />
             <option value="$PROJECT_DIR$/style/typography" />
+            <option value="$PROJECT_DIR$/toaster" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

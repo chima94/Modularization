@@ -1,0 +1,21 @@
+plugins {
+    id 'kotlin-kapt'
+}
+
+applyHiltDeps(this)
+
+dependencies {
+
+    api project(path: ':navigator')
+    implementation project(path: ':searchresult:searchresultdestination')
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle"
+    implementation project(path: ':serverconstants')
+    implementation project(path: ':books:bookmodel')
+    implementation project(path: ':coroutines:dispatchers')
+    implementation project(path: ':paging')
+
+    implementation "com.github.FunkyMuse.KAHelpers:common:$KAHelpers"
+    implementation "com.github.FunkyMuse.KAHelpers:retrofit:$KAHelpers"
+    implementation "com.github.FunkyMuse.KAHelpers:collections:$KAHelpers"
+
+}
