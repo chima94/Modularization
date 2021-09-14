@@ -9,6 +9,8 @@ dependencies {
     implementation project(path: ':components:radiobuttoncomponents')
     implementation project(path: ':search:searchdata')
     implementation project(path: ':searchresult:searchresultdestination')
+    implementation project(path: ':internetdetector')
+
 
     //toaster
     implementation project(path: ':toaster')

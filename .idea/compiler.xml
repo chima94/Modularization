@@ -10,12 +10,16 @@
       <module name="Books.common.composeextensions" target="11" />
       <module name="Books.common.onetimepreferences" target="11" />
       <module name="Books.common.runCodeEveryXLaunch" target="11" />
+      <module name="Books.components.backbuttoncomponent" target="11" />
+      <module name="Books.components.errorcomponent" target="11" />
       <module name="Books.components.radiobuttoncomponents" target="11" />
       <module name="Books.coroutines.appscope" target="11" />
       <module name="Books.coroutines.dispatchers" target="11" />
       <module name="Books.downloads.downloadsdestination" target="11" />
       <module name="Books.downloads.downloadsui" target="11" />
+      <module name="Books.extension" target="11" />
       <module name="Books.favoritebook.favoritebookui" target="11" />
+      <module name="Books.internetdetector" target="11" />
       <module name="Books.latestbook.latestbooksui" target="11" />
       <module name="Books.navigator" target="11" />
       <module name="Books.paging" target="11" />

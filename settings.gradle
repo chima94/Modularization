@@ -61,3 +61,7 @@ include ':books:generalbook'
 
 include ':scraper:scrapermodel'
 include ':scraper:skraper'
+include ':extension'
+include ':components:backbuttoncomponent'
+include ':internetdetector'
+include ':components:errorcomponent'

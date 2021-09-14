@@ -13,6 +13,7 @@ dependencies {
     implementation project(path: ':books:bookmodel')
     implementation project(path: ':coroutines:dispatchers')
     implementation project(path: ':paging')
+    implementation project(path: ':scraper:skraper')
 
     implementation "com.github.FunkyMuse.KAHelpers:common:$KAHelpers"
     implementation "com.github.FunkyMuse.KAHelpers:retrofit:$KAHelpers"

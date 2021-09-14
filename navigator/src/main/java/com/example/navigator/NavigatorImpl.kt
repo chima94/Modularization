@@ -19,5 +19,4 @@ internal class NavigatorImpl @Inject constructor(): Navigator {
         return navigationEvents.trySend(NavigatorEvent.Directions(route, builder)).isSuccess
     }
 
-
 }

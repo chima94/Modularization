@@ -1,0 +1,7 @@
+applyComposeUIDeps(this)
+
+dependencies {
+    //resources
+    implementation project(path: ':resources:strings')
+
+}

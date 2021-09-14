@@ -4,6 +4,12 @@ dependencies {
     implementation project(path: ':resources:strings')
     implementation project(path: ':style:shape')
     implementation project(path: ':style:color')
+    implementation project(path: ':searchresult:searchresultdata')
+    implementation project(path: ':paging')
+    implementation project(path: ':search:searchdata')
+    implementation project(path: ':components:radiobuttoncomponents')
+    implementation project(path: ':components:backbuttoncomponent')
+    implementation project(path: ':components:errorcomponent')
 
     implementation "com.github.FunkyMuse:Composed:$composed"
     implementation "androidx.hilt:hilt-navigation-compose:$navigation_compose"

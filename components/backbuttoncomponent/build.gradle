@@ -1,0 +1,9 @@
+applyComposeUIDeps(this)
+
+dependencies {
+    //resources
+    implementation project(path: ':resources:strings')
+
+    //style
+    implementation project(path: ':style:shape')
+}

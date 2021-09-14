@@ -6,7 +6,7 @@ applyHiltDeps(this)
 
 dependencies {
     implementation project(path: ':books:bookmodel')
-    //implementation project(path: ':extensions')
+    implementation project(path: ':extension')
     implementation project(path: ':serverconstants')
 
 

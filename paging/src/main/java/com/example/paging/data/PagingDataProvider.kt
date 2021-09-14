@@ -19,8 +19,5 @@ class PagingDataProvider @Inject constructor(){
         viewModelScope: CoroutineScope,
         dispatcher: CoroutineDispatcher,
         crossinline function: () -> PagingSource<Int, T>
-    ): Flow<PagingData<T>> =
-        Pager(pagingConfig) {
-            function()
-        }.flow.flowOn(dispatcher).cachedIn(viewModelScope)
+    ): Flow<PagingData<T>> = Pager(pagingConfig) { function() }.flow.flowOn(dispatcher).cachedIn(viewModelScope)
 }

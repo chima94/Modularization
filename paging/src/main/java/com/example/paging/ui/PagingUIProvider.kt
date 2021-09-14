@@ -69,10 +69,7 @@ class PagingUIProvider @Inject constructor(
         val refresh = pagingItems.refreshState
         val prepend = pagingItems.prependState
 
-        if(isLoadStateNoConnectionException(refresh) ||
-            isLoadStateNoConnectionException(append) ||
-                isLoadStateNoConnectionException(prepend)
-        ){
+        if(isLoadStateNoConnectionException(refresh) || isLoadStateNoConnectionException(append) || isLoadStateNoConnectionException(prepend)){
             if(pagingItems.itemCount == 0){
                 noInternetUI()
             }else{
