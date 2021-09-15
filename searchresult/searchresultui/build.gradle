@@ -10,6 +10,9 @@ dependencies {
     implementation project(path: ':components:radiobuttoncomponents')
     implementation project(path: ':components:backbuttoncomponent')
     implementation project(path: ':components:errorcomponent')
+    implementation project(path: ':books:bookui')
+    implementation project(path: ':books:generalbook')
+    implementation project(path: ':books:bookmodel')
 
     implementation "com.github.FunkyMuse:Composed:$composed"
     implementation "androidx.hilt:hilt-navigation-compose:$navigation_compose"

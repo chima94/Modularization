@@ -1,3 +1,10 @@
 applyComposeUIDeps(this)
 applyCoilDeps(this)
 
+dependencies {
+    implementation project(path: ':books:generalbook')
+    implementation project(path: ':style:shape')
+    implementation project(path: ':serverconstants')
+    implementation project(path: ':components:loadingcomponents')
+    implementation project(path: ':resources:strings')
+}

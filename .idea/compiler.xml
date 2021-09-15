@@ -12,6 +12,7 @@
       <module name="Books.common.runCodeEveryXLaunch" target="11" />
       <module name="Books.components.backbuttoncomponent" target="11" />
       <module name="Books.components.errorcomponent" target="11" />
+      <module name="Books.components.loadingcomponents" target="11" />
       <module name="Books.components.radiobuttoncomponents" target="11" />
       <module name="Books.coroutines.appscope" target="11" />
       <module name="Books.coroutines.dispatchers" target="11" />

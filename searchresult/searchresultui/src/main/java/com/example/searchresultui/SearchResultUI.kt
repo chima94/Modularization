@@ -13,6 +13,7 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowUpward
 import androidx.compose.material.icons.filled.FilterAlt
 import androidx.compose.material.icons.filled.FilterList
 import androidx.compose.runtime.*
@@ -20,6 +21,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.paging.compose.items
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
@@ -28,8 +30,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.paging.compose.collectAsLazyPagingItems
-import androidx.paging.compose.itemsIndexed
+import androidx.paging.compose.items
 import com.example.backbuttoncomponent.BackButton
+import com.example.bookui.Book
 import com.example.color.primaryVariant
 import com.example.errorcomponent.ErrorMessage
 import com.example.errorcomponent.ErrorWithRetry
@@ -45,8 +48,12 @@ import com.example.shape.Shapes
 import com.funkymuse.composed.core.lazylist.lastVisibleIndexState
 import com.funkymuse.composed.core.rememberBooleanDefaultFalse
 import com.funkymuse.composed.core.rememberIntSaveableDefaultZero
+import com.google.accompanist.insets.LocalWindowInsets
 import com.google.accompanist.insets.navigationBarsPadding
+import com.google.accompanist.insets.rememberInsetsPaddingValues
 import com.google.accompanist.insets.statusBarsPadding
+import com.google.accompanist.swiperefresh.SwipeRefresh
+import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -129,12 +136,53 @@ fun SearchResultUI(){
             val lastVisibleIndex by columnState.lastVisibleIndexState()
 
             AnimatedVisibility(
-                visible = lastVisibleIndex != null && lastVisibleIndex ?: 0 > 20,
-                modifier = Modifier.align(Alignment.BottomCenter)
+                visible = lastVisibleIndex != null && lastVisibleIndex?: 0 > 20,
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
                     .padding(bottom = 22.dp, end = 4.dp)
                     .zIndex(2f)
             ) {
+                Box{
+                    FloatingActionButton(
+                        modifier = Modifier.navigationBarsPadding(),
+                        onClick = {scope.launch{columnState.scrollToItem(0)}}
+                    ) {
+                        Icon(
+                            Icons.Filled.ArrowUpward,
+                            contentDescription = stringResource(com.example.strings.R.string.go_back_to_top),
+                            tint = Color.White
+                        )
+                    }
+                }
+            }
 
+            val swipeToRefreshState = rememberSwipeRefreshState(isRefreshing = false)
+            SwipeRefresh(
+                state = swipeToRefreshState,
+                onRefresh = {
+                    swipeToRefreshState.isRefreshing = true
+                    retry()
+                    swipeToRefreshState.isRefreshing = false
+                },
+                modifier = Modifier.fillMaxSize()
+            ) {
+                LazyColumn(
+                    state = columnState,
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(top = 8.dp),
+                    contentPadding = rememberInsetsPaddingValues(
+                        insets = LocalWindowInsets.current.navigationBars,
+                        additionalBottom = 84.dp
+                    )
+                ){
+                    items(pageItems, key = {it.id}){item ->
+
+                        item ?: return@items
+
+                        Book(book = item){}
+                    }
+                }
             }
         }
     }

@@ -10,6 +10,7 @@ dependencies {
     implementation project(path: ':search:searchdata')
     implementation project(path: ':searchresult:searchresultdestination')
     implementation project(path: ':internetdetector')
+    implementation project(path: ':books:bookui')
 
 
     //toaster
